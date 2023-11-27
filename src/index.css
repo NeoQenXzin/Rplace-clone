@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.pixel {
+  /* border: 1px solid black; */
+  --size: 20px;
+  width: var(--size);
+  height: var(--size);
+  cursor: crosshair;
+}
+
+.pixel:hover {
+  --hover-size: 2px;
+  margin: calc(var(--hover-size) * -1);
+  height: calc(var(--size) + var(--hover-size) * 2);
+  width: calc(var(--size) + var(--hover-size) * 2);
+  position: relative;
+
+  @apply z-20 shadow-md;
+}
+
+.pixel-picker {
+  --size: 28px;
+  --hover-size: 4px;
+  @apply shadow-sm;
+}
+
+.pixel-picker.active {
+  @apply z-10 outline outline-offset-0 outline-black;
+}
+
+#board {
+  display: grid;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "rplace",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@fastify/cors": "^8.4.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.46.0",
+    "fastify": "^4.24.3",
+    "fastify-socket.io": "^5.0.0",
+    "postcss": "^8.4.31",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "socket.io": "^4.7.2",
+    "socket.io-client": "^4.7.2",
+    "tailwindcss": "^3.3.5",
+    "vite": "^4.4.5"
+  }
+}

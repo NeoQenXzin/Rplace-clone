@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/place.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>r/place</title>
+    <link rel="stylesheet" href="./src/index.css" />
+  </head>
+  <body>
+    <!-- Solution -->
+
+    <div class="py-4">
+      <h1 class="text-center text-4xl font-bold">r/place</h1>
+      <div class="mt-4 flex flex-col items-center justify-center">
+        <div id="board" class="shadow"></div>
+        <div id="warning" class="hidden text-sm text-red-500">
+          Please wait 2 secondes before placing another pixel.
+        </div>
+      </div>
+    </div>
+    <div class="fixed bottom-0 left-0 right-0">
+      <div
+        class="mx-auto my-4 flex w-fit flex-col items-center justify-center gap-2 rounded-md bg-slate-50 p-4 shadow-md"
+      >
+        <p class="text-center font-bold">Choose color</p>
+        <div id="time-left"></div>
+        <div id="color-picker" class="flex items-center justify-center"></div>
+      </div>
+    </div>
+    <script type="module" src="src/index..js"></script>
+  </body>
+</html>
